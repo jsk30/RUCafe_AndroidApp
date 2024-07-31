@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">RUCafe</string>
+    <string name="main_title">Welcome to RU Cafe!</string>
+    <string name="donut_title">Order Donut</string>
+    <string name="sandwich_title">Order Sandwich</string>
+    <string name="coffee_title">Order Coffee</string>
+    <string name="curr_title">Current Order</string>
+    <string name="addToOrder">Add to Order</string>
+    <string name="finalize">Finalize Order</string>
+    <string name="remove">Remove</string>
+    <string name="addTo">+</string>
+    <string name="subT">Subtotal: </string>
+    <string name="salesTax">Sales Tax: </string>
+    <string name="total">Total: </string>
+    <string-array name="itemType">
+        <item>Yeast</item>
+        <item>Yeast</item>
+        <item>Yeast</item>
+        <item>Yeast</item>
+        <item>Yeast</item>
+        <item>Yeast</item>
+        <item>Cake</item>
+        <item>Cake</item>
+        <item>Cake</item>
+        <item>Donut Hole</item>
+        <item>Donut Hole</item>
+        <item>Donut Hole</item>
+    </string-array>
+    <string-array name="itemFlavors">
+        <item>Glazed</item>
+        <item>Chocolate</item>
+        <item>Strawberry</item>
+        <item>Coffee</item>
+        <item>Glaze with Sprinkles</item>
+        <item>Chocolate with Sprinkles</item>
+        <item>Lemon</item>
+        <item>Apple Crisp</item>
+        <item>Chocolate</item>
+        <item>Glaze</item>
+        <item>Chocolate</item>
+        <item>Coffee</item>
+    </string-array>
+</resources>

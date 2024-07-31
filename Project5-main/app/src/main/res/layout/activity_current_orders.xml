@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currentOrderActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".currentOrderActivity">
+
+    <TextView
+        android:id="@+id/currTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/curr_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ListView
+        android:id="@+id/currListView"
+        android:layout_width="413dp"
+        android:layout_height="458dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currTitle" />
+
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currListView"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/bt_finalize"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="finalizeOrder"
+        android:text="Finalize Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toEndOf="@+id/bt_delete"
+        app:layout_constraintTop_toBottomOf="@+id/currListView"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <TextView
+        android:id="@+id/subtotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/subT"
+        app:layout_constraintBottom_toTopOf="@+id/bt_delete"
+        app:layout_constraintEnd_toStartOf="@+id/salesTaxTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currListView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/salesTaxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/salesTax"
+        app:layout_constraintBottom_toTopOf="@+id/bt_finalize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtotalTextView"
+        app:layout_constraintTop_toBottomOf="@+id/currListView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/total"
+        app:layout_constraintBottom_toTopOf="@+id/bt_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currListView"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
